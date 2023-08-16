@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: complete-prodcution-e2e-app
-          image: tstraining0105/complete-prodcution-e2e-pipeline:latest
+          image: tstraining0105/complete-prodcution-e2e-pipeline:
           resources:
             limits:
               memory: "256Mi"
