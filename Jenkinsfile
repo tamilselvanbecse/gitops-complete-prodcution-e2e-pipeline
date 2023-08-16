@@ -16,7 +16,7 @@ pipeline {
     
         stage("Checkout from SCM") {
             steps {
-                git branch: 'main', credentialsId: 'github', url: 'https://github.com/dmancloud/gitops-complete-prodcution-e2e-pipeline'
+                git branch: 'main', credentialsId: 'github', url: 'https://github.com/tamilselvanbecse/gitops-complete-prodcution-e2e-pipeline'
             }
         }
     
@@ -41,7 +41,7 @@ pipeline {
                     git commit -m "Updated Deployment Manifest"
                 """
                 withCredentials([gitUsernamePassword(credentialsId: 'github', gitToolName: 'Default')]) {
-                    sh "git push https://github.com/dmancloud/gitops-complete-prodcution-e2e-pipeline main"
+                    sh "git push https://github.com/tamilselvanbecse/gitops-complete-prodcution-e2e-pipeline main"
                 }
             }
         }
